@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Created Dialog Box</title>
+    <script>
+        function alertdemo() 
+        {
+            alert("WellCome to My Word");
+        }
+        function promptdemo()
+         {
+            let name = prompt("Enter any Name:");
+            if (name === null)
+            {
+                document.write("Please Enter the Name.");
+            }
+            else
+            {
+                document.write("Name="+name);
+            }
+        }
+        function confirmdemo()
+        {
+            let choice = confirm("Are You Learn in IMRD shahada");
+            if(choice===true)
+            {
+                document.write("Your Future in Danger");
+            }
+            else
+            {
+                document.write("You are Lucky bro.")
+            }
+        }
+
+
+    </script>
+</head>
+
+<body  align="center">
+    <input type="button" value="alert box" onclick="alertdemo()" />
+    <br> <input type="button" value="prompt box" onclick="promptdemo()" />
+    <br><input type="button" value="comfirm box" onclick="confirmdemo()" />
+</body>
+
+</html>
